@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assest/fontsizecss/css/all.min.css">
     <link rel="stylesheet" href="../01_Case/assest/css/normalize.css">
 
+
     <style>
         body{
             overflow-x: hidden;
@@ -42,26 +43,27 @@
 
         #sidebox{
             background: purple;
-            width: 20vw;
-            min-height: 90vh;
-
+            width: 22vw;
+            top: 0;
+            bottom: 0;
 
         }
         #sidebox>nav>ol{
             list-style-type: none;
         }
-        main>section>div>img{
 
-        }
 
         #content{
+            position: relative;
             width: 77vw;
-            min-height: 90vh;
+            top: 0;
+            bottom: 0;
         }
         #content>p{
             position: relative;
             left: 1vw;
         }
+
         header{
             overflow: hidden;
         }
@@ -71,33 +73,33 @@
             width: 100vw;
             height: 50px;
             box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-            position: absolute;
+            position: relative;
 
         }
         footer>h4{
-            position: relative;
-            left: 650px;
-        }
-        section>div{
-            border: 5px solid black;
-            width: 350px;
-            height: 350px;
             position: absolute;
-            left: 270px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+            width: fit-content;
+            height: fit-content;
         }
-        #box2{
-            border: 5px solid black;
-            width: 350px;
-            height: 350px;
-            position:absolute;
-            left: 630px;
-        }
-        #box3{
-            border: 5px solid black;
-            width: 350px;
-            height: 350px;
+
+        main>section>div{
+            width: calc(100% / 3);
+            aspect-ratio: 1/1;
+            border: 1px solid black;
+            display: inline-block;
+            margin-right: -5px;
             position: relative;
-            left: 710px;
+        }
+        main>section>div>img{
+            width: 100%;
+            aspect-ratio: 1/1;
+            position: relative;
         }
 
     </style>
@@ -116,6 +118,7 @@
         </ol>
     </nav>
 </header>
+
 <main>
     <div id="sidebox">
         <nav>
@@ -132,14 +135,14 @@
     </div>
 
     <section id="content">
-        <div id="box1">
-            <img src="../02_case/assest/img/Z8Dq.gif" alt="animation" width="350px" height="350px">
+        <div>
+            <img src="../02_case/assest/img/Z8Dq.gif" alt="animation">
         </div>
-        <div id="box2">
-            <img src="../02_case/assest/img/Z8Dq.gif" alt="animation" width="350px" height="350px">
+        <div>
+            <img src="../02_case/assest/img/Z8Dq.gif" alt="animation">
         </div>
-        <div id="box3">
-            <img src="../02_case/assest/img/Z8Dq.gif" alt="animation" width="350px" height="350px">
+        <div>
+            <img src="../02_case/assest/img/Z8Dq.gif" alt="animation">
         </div>
 
         <p>
