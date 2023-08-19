@@ -6,14 +6,19 @@
     <link rel="stylesheet" href="../01_Case/assest/css/normalize.css">
     <style>
 
-        section{
+        /*section{*/
+        /*    position: sticky;*/
+        /*    top: 0;*/
+        /*}*/
+        .ch{
             position: sticky;
             top: 0;
+            z-index: 9999;
         }
 
         section>div:first-child{
             height: 50px;
-            position: relative;
+            /*position: relative;*/
         }
         section>div:first-child>span{
             height: fit-content;
@@ -68,7 +73,7 @@
 <body>
 <main>
     <section>
-        <div>
+        <div class="ch">
             <span>Card 01</span>
         </div>
         <div>
@@ -76,7 +81,7 @@
         </div>
     </section>
     <section>
-        <div>
+        <div class="ch">
             <span>Card 02</span>
         </div>
         <div>
@@ -84,7 +89,7 @@
         </div>
     </section>
     <section>
-        <div>
+        <div class="ch">
             <span>Card 03</span>
         </div>
         <div>
@@ -92,7 +97,7 @@
         </div>
     </section>
     <section>
-        <div>
+        <div class="ch">
             <span>Card 04</span>
         </div>
         <div>
